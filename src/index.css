@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Norican&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@1,700&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,19 +8,121 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+;
 }
 
 #home-header{
   display: flex;
   justify-content: space-evenly;
-  height: 50vh;
+  height: 25vh;
+  padding: 0;
 }
 
 .header-img{
-  width: 100%;
+  width: 50vw;
   height: auto;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  object-fit: inherit;
+}
+
+#header-img-3{
+  display: none;
+}
+#header-img-container{
+  height: 25vh;
 }
 
 #title{
   text-align: center;
+  font-family: 'Grand Hotel', cursive;
+  font-family: 'Norican', cursive;
+}
+
+#nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px black;
+  background-color:  rgb(16, 16, 16);
+  color: white
+
+}
+
+
+.nav-cause{
+  display: none;
+}
+
+#title-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-five{
+  font-family: 'Quantico', sans-serif;
+  margin-left: 2%;
+  font-size: xx-large;
+}
+
+#menu-icon{
+  font-size: 40px;
+  color: rgb(0, 145, 255) !important;
+}
+
+.charity-card-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(0, 145, 255) !important;
+}
+
+#charities-container{
+  background-color: rgb(0, 145, 255) !important;
+  
+}
+
+.charity-btn-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  border-top: solid 1px;
+  padding: 8%;
+}
+
+.charity-btn{
+  margin: 5% 0% 5% 0%;
+  background-color: rgb(0, 187, 255) !important;
+}
+
+#als-img, #world-vets-img, #ocra-img, #nomv-img{
+  padding: 2.5% ;
+  margin-top: 10%;
+  
+}
+
+#vfoundation-img{
+  padding:10% 2% 0% 2%;
+}
+
+.charity-card{
+  padding: 1%
+}
+
+.card{
+  padding:1%
+}
+
+#als-logo{
+  padding: 8%
+}
+
+#v-foundation-logo{
+  padding: 11% 3% 
+}
+
+#ocra-logo{
+  padding: 3%;
 }
