@@ -7,22 +7,22 @@ const NavBar = () =>{
 
     return(
         <div id="nav-container">
-            <h1 id='title-five'>Kelly Rides For 5</h1>
+            <h2 id='title-five'>Kelly Rides For 5</h2>
             <Nav id="nav-bar">
                 <NavItem className="nav-cause" >
-                    <NavLink href="#">Cause 1</NavLink>
+                    <NavLink className="nav-link" href="#">World Vets</NavLink>
                 </NavItem>
                 <NavItem className="nav-cause">
-                    <NavLink href="#" >Cause 2</NavLink>
+                    <NavLink className="nav-link" href="#">ALS Association</NavLink>
                 </NavItem>
                 <NavItem className="nav-cause">
-                    <NavLink href="#" >Cause 3</NavLink>
+                    <NavLink className="nav-link" href="#">The V Foundation</NavLink>
                 </NavItem>
                 <NavItem className="nav-cause">
-                    <NavLink href="#" >Cause 4</NavLink>
+                    <NavLink className="nav-link" href="#">Not One More Vet</NavLink>
                 </NavItem>
                 <NavItem className="nav-cause">
-                    <NavLink href="#" >Cause 5</NavLink>
+                    <NavLink className="nav-link" href="#">Ovarian Cancer Research Alliance</NavLink>
                 </NavItem>
                 <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
                 <DropdownToggle nav caret>

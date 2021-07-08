@@ -18,6 +18,7 @@ body {
   padding: 0;
 }
 
+
 .header-img{
   width: 50vw;
   height: auto;
@@ -25,7 +26,13 @@ body {
   margin: 0;
   padding: 0;
   object-fit: inherit;
+  animation: fadeIn 1.5s infinite alternate;
 }
+
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
+
 
 #header-img-3{
   display: none;
@@ -46,10 +53,11 @@ body {
   align-items: center;
   border-bottom: solid 1px black;
   background-color:  rgb(16, 16, 16);
-  color: white
-
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
-
 
 .nav-cause{
   display: none;
@@ -59,17 +67,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2%
 }
 
 #title-five{
   font-family: 'Quantico', sans-serif;
-  margin-left: 2%;
+  margin: 2.75%;
   font-size: xx-large;
 }
 
 #menu-icon{
   font-size: 40px;
   color: rgb(0, 145, 255) !important;
+  position: sticky;
+  margin: 3%;
 }
 
 .charity-card-container{
@@ -79,15 +90,26 @@ body {
   background-color: rgb(0, 145, 255) !important;
 }
 
+#donate-btn{
+  font-size: x-large;
+  margin-bottom: 25%;
+}
+
+#learn-more-link{
+  font-size: large;
+  color: rgb(0, 187, 255);
+  padding-bottom: 5%;
+}
+
 #charities-container{
   background-color: rgb(0, 145, 255) !important;
-  
+  padding-bottom: 10%
 }
 
 .charity-btn-container{
   display: flex;
-  flex-direction: row;
-  justify-content:space-between;
+  flex-direction: column;
+  align-items: center;
   border-top: solid 1px;
   padding: 8%;
 }
@@ -95,34 +117,335 @@ body {
 .charity-btn{
   margin: 5% 0% 5% 0%;
   background-color: rgb(0, 187, 255) !important;
+  color: rgb(63, 63, 63) !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 #als-img, #world-vets-img, #ocra-img, #nomv-img{
-  padding: 2.5% ;
+  padding: 2.5% 2.5% 0% 2.5%;
   margin-top: 10%;
+
   
 }
+#als-img{
+  padding-bottom: 0
+}
 
+#world-vets-img{
+  padding-top: 10%
+}
+
+#nomv-logo{
+  padding: 5%
+}
 #vfoundation-img{
-  padding:10% 2% 0% 2%;
+  padding:15% 2% 0% 2%;
 }
 
 .charity-card{
-  padding: 1%
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card{
-  padding:1%
+  padding: 1%;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.card-img{
+  padding: 3.5%
 }
 
 #als-logo{
-  padding: 8%
+  padding-top: 13%;
 }
 
 #v-foundation-logo{
-  padding: 11% 3% 
+  padding: 11% 3% ;
 }
 
 #ocra-logo{
+  padding: 5%;
+}
+
+#blog-header{
+  padding: 5% 0% 5% 0%;
+  text-align: center;
+  border-bottom: solid 1px black
+}
+
+.blog-title{
+  margin: 7% 0% 3% 0%
+}
+.blog-post{
+  padding: 8%;
+}
+
+.blog-img{
+  width: 33vw;
+  height: 20vh;
+}
+
+footer{
+  text-align: center;
   padding: 3%;
+  font-size: small;
+  background-color: rgb(21, 21, 21);
+  color: whitesmoke
+}
+
+#why-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8%;
+  margin: 2%;
+}
+
+#why-title{
+  padding: 3% 0% 3% 0%;
+}
+
+.kellys-why{
+  text-indent: 5%;
+}
+#why{
+  padding-bottom: 5%;
+}
+
+#why-img{
+  width: 100%;
+  height: auto;
+  border: solid 1px black;
+  border-radius: 4px;
+  margin-bottom: 3%
+}
+
+/* BREAK POINT */
+
+
+@media screen and (min-width: 768px){
+  #home-header{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+    padding: 0;
+  }
+  
+  
+  .header-img{
+    width: 50vw;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    object-fit: inherit;
+    animation: fadeIn 2s infinite alternate;
+  }
+  
+  @keyframes fadeIn { 
+    from { opacity: 0; } 
+  }
+  
+  
+  #header-img-3{
+    display: block;
+  }
+  #header-img-container{
+    height:80vh;
+  }
+  
+  #title{
+    text-align: center;
+    font-family: 'Grand Hotel', cursive;
+    font-family: 'Norican', cursive;
+  }
+  
+  #nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px black;
+    background-color:  rgb(16, 16, 16);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    height: 8vh;
+    opacity: 91%
+  }
+  
+  .nav-cause{
+    display: block;
+    padding-top: .5%;
+  }
+  .nav-link{
+    color: rgb(0, 145, 255) !important;
+    font-size: large !important;
+  }
+  
+  
+  #title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%
+  }
+  
+  #title-five{
+    font-family: 'Quantico', sans-serif;
+    margin: 2.75%;
+    font-size: xx-large;
+  }
+  
+  #menu-icon{
+    font-size: 40px;
+    color: rgb(0, 145, 255) !important;
+    position: sticky;
+    margin: 3%;
+  }
+  
+  .charity-card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(0, 145, 255) !important;
+  }
+  
+  #donate-btn{
+    font-size: x-large;
+    margin-bottom: 25%;
+  }
+  
+  #learn-more-link{
+    font-size: large;
+    color: rgb(0, 187, 255);
+    padding-bottom: 5%;
+  }
+  
+  #charities-container{
+    background-color: rgb(0, 145, 255) !important;
+    padding-bottom: 10%
+  }
+  
+  .charity-btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid 1px;
+    padding: 8%;
+  }
+  
+  .charity-btn{
+    margin: 5% 0% 5% 0%;
+    background-color: rgb(0, 187, 255) !important;
+    color: rgb(63, 63, 63) !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  
+  #als-img, #world-vets-img, #ocra-img, #nomv-img{
+    padding: 2.5% 2.5% 0% 2.5%;
+    margin-top: 10%;
+  }
+
+  #ocra-img{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #als-img{
+    padding-bottom: 0
+  }
+  
+  #world-vets-img{
+    padding-top: 10%
+  }
+  
+  #nomv-logo{
+    padding: 5%
+  }
+  #vfoundation-img{
+    padding:15% 2% 0% 2%;
+  }
+  
+  .charity-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card{
+    padding: 1%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
+  .card-img{
+    padding: 3.5%
+  }
+  
+  #als-logo{
+    padding-top: 5%;
+  }
+  
+  #v-foundation-logo{
+    padding: 8% 3% ;
+  }
+  
+  #ocra-logo{
+    padding: 5%;
+  }
+  
+  #blog-header{
+    padding: 5% 0% 5% 0%;
+    text-align: center;
+    border-bottom: solid 1px black
+  }
+  
+  .blog-title{
+    margin: 7% 0% 3% 0%
+  }
+  .blog-post{
+    padding: 8%;
+  }
+  
+  .blog-img{
+    width: 33vw;
+    height: 20vh;
+  }
+  
+  footer{
+    text-align: center;
+    padding: 1% 0% 3% 0%;
+    font-size: small;
+    background-color: rgb(21, 21, 21);
+    color: whitesmoke;
+    height: 5vh
+  }
+  
+  #why-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8%;
+    margin: 2%;
+  }
+  
+  #why-title{
+    padding: 3% 0% 3% 0%;
+  }
+  
+  .kellys-why{
+    text-indent: 5%;
+  }
+  #why{
+    padding-bottom: 5%;
+  }
+  
+  #why-img{
+    width: 100%;
+    height: auto;
+    border: solid 1px black;
+    border-radius: 4px;
+    margin-bottom: 3%
+  }
+  
 }
