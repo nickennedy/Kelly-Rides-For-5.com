@@ -1,4 +1,4 @@
-import {Card, CardImg, CardText, CardBody,CardTitle, Button, CardSubtitle} from 'reactstrap';
+import {Card, CardImg, CardText, CardBody, Button, CardSubtitle} from 'reactstrap';
 import {Link} from 'react-router-dom'
 
 const Charity = (props) => {

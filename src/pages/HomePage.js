@@ -15,7 +15,7 @@ class HomePage extends React.Component{
                     <KellysWhy/>
                     <div id="charities-container" className="card blurred-box">
                         <div className="title-background">
-                            <img src={theFive} id="charity-container-title"/>
+                            <img src={theFive} id="charity-container-title" alt="The Five Causes"/>
                         </div>
                         <CharitiesList/>
                     </div>
