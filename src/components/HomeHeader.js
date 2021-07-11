@@ -91,8 +91,8 @@ class HomeHeader extends React.Component {
         count: 0,
     }
 
-    componentDidMount() {
-        this.myInterval = setInterval(() => {
+    changeCount = () => {
+        setInterval(() => {
             if (this.state.count === 4) {
                 this.setState({ count: 0 })
             } else {
@@ -103,6 +103,11 @@ class HomeHeader extends React.Component {
         }, 4000)
     }
 
+    componentDidMount() {
+        this.changeCount()
+    }
+
+    
     componentWillUnmount() {
         clearInterval(this.myInterval)
     }
