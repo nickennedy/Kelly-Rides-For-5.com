@@ -7,22 +7,22 @@ const NavBar = () =>{
 
     return(
         <div id="nav-container">
-            <h2 id='title-five'>Kelly Rides For 5</h2>
+            <h2 id='title-five' className="animate__backInLeft"  >Kelly Rides For 5!</h2>
             <Nav id="nav-bar">
-                <NavItem className="nav-cause" >
-                    <NavLink className="nav-link" href="#">World Vets</NavLink>
+                <NavItem className="nav-cause">
+                    <NavLink className="nav-link" target="_blank"  href="https://ebaumsworld.com">World Vets</NavLink>
                 </NavItem>
                 <NavItem className="nav-cause">
-                    <NavLink className="nav-link" href="#">ALS Association</NavLink>
+                    <NavLink className="nav-link animate__pulse" target="_blank" href="#">ALS Association</NavLink>
                 </NavItem>
                 <NavItem className="nav-cause">
-                    <NavLink className="nav-link" href="#">The V Foundation</NavLink>
+                    <NavLink className="nav-link" target="_blank" href="#">The V Foundation</NavLink>
                 </NavItem>
                 <NavItem className="nav-cause">
-                    <NavLink className="nav-link" href="#">Not One More Vet</NavLink>
+                    <NavLink className="nav-link" target="_blank" href="#">Not One More Vet</NavLink>
                 </NavItem>
                 <NavItem className="nav-cause">
-                    <NavLink className="nav-link" href="#">Ovarian Cancer Research Alliance</NavLink>
+                    <NavLink className="nav-link" target="_blank" href="#">Ovarian Cancer Research Alliance</NavLink>
                 </NavItem>
                 <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
                 <DropdownToggle nav caret>
