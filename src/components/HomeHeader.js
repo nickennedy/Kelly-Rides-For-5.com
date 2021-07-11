@@ -100,7 +100,7 @@ class HomeHeader extends React.Component {
                     count: this.state.count + 1
                 })
             }
-        }, 4000)
+        }, 5000)
     }
 
     componentWillUnmount() {
