@@ -27,7 +27,7 @@ body {
   margin: 0;
   padding: 0;
   object-fit: inherit;
-  animation: fadeIn 2s infinite alternate;
+  animation: fadeIn 5s infinite alternate;
 }
 
 @keyframes fadeIn { 
@@ -252,11 +252,11 @@ footer{
     margin: 0;
     padding: 0;
     object-fit: inherit;
-    animation: fadeIn 2s infinite alternate;
+    animation: fadeIn 2s infinite alternate ;
   }
   
   @keyframes fadeIn { 
-    from { opacity: 0; } 
+    from { opacity: 0%; } 
   }
   
   

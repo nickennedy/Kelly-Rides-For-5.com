@@ -38,6 +38,9 @@ class HomeHeader extends React.Component {
                 src: kellysBike,
                 key: 'kelly-img3'
             },
+        
+        
+        
         ],
 
         pics: [
@@ -109,18 +112,57 @@ class HomeHeader extends React.Component {
 
     
     componentWillUnmount() {
-        clearInterval(this.myInterval)
+        clearInterval(this.changeCount)
     }
 
 
     render() {
-        return (
-            <header id='home-header'>
-                <img id="header-img-1" className='header-img' src={this.state.kellysPics[this.state.count].src} alt="kelly riding his bike" />
-                <img id={this.state.logos[this.state.count].key} className='header-img' src={this.state.logos[this.state.count].src} alt="" />
-                <img id="header-img-3" className='header-img' src={this.state.pics[this.state.count].src} alt="" />
-            </header>
-        )
+        if(this.state.count === 0){
+            return (
+                <header id='home-header'>
+                    <img id="header-img-1" className='header-img' src={this.state.kellysPics[0].src} alt="kelly riding his bike" />
+                    <img id={this.state.logos[this.state.count].key} className='header-img' src={this.state.logos[0].src} alt="" />
+                    <img id="header-img-3" className='header-img' src={this.state.pics[0].src} alt="" />
+                </header>
+            )
+        }
+        else if(this.state.count === 1){
+            return (
+                <header id='home-header'>
+                    <img id="header-img-1" className='header-img' src={this.state.kellysPics[3].src} alt="kelly riding his bike" />
+                    <img id={this.state.logos[this.state.count].key} className='header-img' src={this.state.logos[1].src} alt="" />
+                    <img id="header-img-3" className='header-img' src={this.state.pics[1].src} alt="" />
+                </header>
+            )
+        }
+        else if(this.state.count === 2){
+            return (
+                <header id='home-header'>
+                    <img id="header-img-1" className='header-img' src={this.state.kellysPics[this.state.count].src} alt="kelly riding his bike" />
+                    <img id={this.state.logos[this.state.count].key} className='header-img' src={this.state.logos[this.state.count].src} alt="" />
+                    <img id="header-img-3" className='header-img' src={this.state.pics[this.state.count].src} alt="" />
+                </header>
+            )
+        }
+        else if(this.state.count === 3){
+            return (
+                <header id='home-header'>
+                    <img id="header-img-1" className='header-img' src={this.state.kellysPics[this.state.count].src} alt="kelly riding his bike" />
+                    <img id={this.state.logos[this.state.count].key} className='header-img' src={this.state.logos[this.state.count].src} alt="" />
+                    <img id="header-img-3" className='header-img' src={this.state.pics[this.state.count].src} alt="" />
+                </header>
+            )
+        }
+        else if(this.state.count === 4){
+            return (
+                <header id='home-header'>
+                    <img id="header-img-1" className='header-img' src={this.state.kellysPics[this.state.count].src} alt="kelly riding his bike" />
+                    <img id={this.state.logos[this.state.count].key} className='header-img' src={this.state.logos[this.state.count].src} alt="" />
+                    <img id="header-img-3" className='header-img' src={this.state.pics[this.state.count].src} alt="" />
+                </header>
+            )
+        }
+        
     }
 
 }
