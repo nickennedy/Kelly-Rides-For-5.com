@@ -22,82 +22,7 @@ import Banner5 from './banners/banner5'
 import Banner6 from './banners/banner6'
 class HomeHeader extends React.Component {
     state = {
-        kellysPics: [
-            {
-                src: kellyWV,
-                key: 'kelly-img4'
-            },
-            {
-                src: kellyWithSign,
-                key: 'kelly-img1'
-            },
-            {
-                src: kellyOnBike,
-                key: 'kelly-img2'
-            },
-            {
-                src: jersey5,
-                key: 'kelly-img5'
-            },
-            
-            {
-                src: kellysBike,
-                key: 'kelly-img3'
-            },
-        
-        
-        
-        ],
-
-        pics: [
-            {
-                src: worldVetsPic ,
-                key: 'pic1'
-            },
-            {
-                src: mountain,
-                key: 'pic2'
-            },
-            {
-                src: kellysFriends,
-                key: 'pic3'
-            },
-            {
-                src: kellyMountain,
-                key: 'pic4'
-            },
-            {
-                src: puppy,
-                key: 'pic5'
-            },
-
-
-        ],
-
-        logos: [ 
-            {
-                src: worldVetsLogo,
-                key: 'world-vets-logo'
-            },
-            {
-                src: alsLogo,
-                key: 'als-logo'
-            },
-            {
-                src: ocraLogo,
-                key: 'ocra-logo'
-            },
-            
-            {
-                src: vFoundationLogo,
-                key: 'v-foundation-logo'
-            },
-            {
-                src: nomvLogo,
-                key: 'nomv-logo'
-            }
-        ],
-        count: 0,
+        count: 2,
     }
 
     changeCount = () => {
@@ -109,7 +34,7 @@ class HomeHeader extends React.Component {
                     count: this.state.count + 1
                 })
             }
-        }, 4000)
+        }, 6000)
     }
 
     componentDidMount() {

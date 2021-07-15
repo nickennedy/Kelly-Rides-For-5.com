@@ -1,5 +1,5 @@
 import ocraLogo from '../../images/ocraLogo.png'
-import shelly from '../../images/shelly.jpg'
+import shelly from '../../images/shelly.png'
 import ribbon from '../../images/ribbon.png'
 
 const banner3 = () =>{
