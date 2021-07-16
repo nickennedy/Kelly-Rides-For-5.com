@@ -64,7 +64,7 @@ class CharitiesList extends React.Component{
                 charityName: "",
                 missionStatement:"Help Kelly go the extra mile and show your support for his ride by making a contribution to his go fund me page.",
                 link: "https://www.gofundme.com/f/kellys-ride-for-5-charity-ride-across-america?utm_campaign=p_nacp+share-sheet&utm_medium=email&utm_source=customer",
-                goFundMe: 'href="https://www.gofundme.com/f/kellys-ride-for-5-charity-ride-across-america?utm_campaign=p_nacp+share-sheet&utm_medium=email&utm_source=customer',
+                goFundMe: "https://www.gofundme.com/f/kellys-ride-for-5-charity-ride-across-america?utm_campaign=p_nacp+share-sheet&utm_medium=email&utm_source=customer",
                 key: 'kellys-card',
                 imgKey: 'gofundme-img',
                 vid: ''
