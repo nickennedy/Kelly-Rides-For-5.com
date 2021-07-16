@@ -281,6 +281,11 @@ footer{
   .header-img-3{
     display: none;
   }
+  #drop-down{
+    max-height: 610px;
+    overflow: scroll;
+  }
+  
 }
 
 
