@@ -34,7 +34,7 @@ class CharitiesList extends React.Component{
                 charityName: 'ALS Association',
                 missionStatement:"Help to discover treatments and a cure for ALS, and to serve, advocate for, and empower people affected by ALS to live their lives to the fullest.",
                 link: 'https://www.alsa-midamerica.org/',
-                goFundMe: 'http://www.gofundme.com',
+                goFundMe: 'https://www.alsa-midamerica.org/',
                 key: 'als-card',
                 imgKey: 'als-img',
                 vid: "https://www.youtube.com/embed/mVG9Nk6voM8"
