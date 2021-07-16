@@ -7,7 +7,7 @@ const banner3 = () =>{
         <header id='home-header'>
             <img id="shelly-img" className='header-img' src={shelly} alt="kelly riding his bike" />
             <img id="ocra-logo" className='header-img' src={ocraLogo} alt="ovarian cancer research alliance logo" />
-            <img id="ribbon-img" className='header-img' src={ribbon} alt="ovarian cancer ribbon" />
+            <img id="ribbon-img" className='header-img header-img-3' src={ribbon} alt="ovarian cancer ribbon" />
         </header>
     )
 }

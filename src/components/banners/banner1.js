@@ -5,9 +5,9 @@ import puppy from '../../images/puppy.png'
 const banner1 = () =>{
     return (
         <header id='home-header'>
-            <img id="header-img-1" className='header-img' src={wvGroup} alt="group photo" />
+            <img id="wv-group-photo" className='header-img' src={wvGroup} alt="group photo" />
             <img id="world-vets-logo" className='header-img' src={worldVetsLogo} alt="world vets logo" />
-            <img id="header-img-3" className='header-img' src={puppy} alt="kelly holding a puppy" />
+            <img id="kelly-puppy" className='header-img header-img-3' src={puppy} alt="kelly holding a puppy" />
         </header>
     )
 }

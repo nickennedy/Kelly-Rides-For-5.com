@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Norican&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@1,700&display=swap');
-
+:root{
+  --base-font: "montserrat", sans-serif;
+  /* Social Color */
+  --facebook: #3b5998;
+  --instagram: #517fa4;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,7 +13,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-;
+}
+#main-container{
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 /* ############################ Header Section ################################ */
@@ -35,9 +43,7 @@ body {
 }
 
 
-#header-img-3{
-  display: none;
-}
+
 #header-img-container{
   height: 25vh;
 }
@@ -62,6 +68,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 5;
+  opacity: 91%
 }
 
 .nav-cause{
@@ -101,7 +108,15 @@ body {
 
 #charities-container{
   background-color: rgb(0, 145, 255) !important;
-  padding-bottom: 10%
+  padding-bottom: 10%;
+}
+.title-background{
+  align-self: center;
+  margin-top: 5%;
+}
+#charity-container-title{
+  width: 45vw; 
+  height: auto;
 }
 
 .charity-btn-container{
@@ -121,10 +136,15 @@ body {
 
 #als-card, #world-vets-card, #ocra-card, #nomv-card{
   padding: 2.5% 2.5% 0% 2.5%;
-  margin-top: 10%;
-
-  
+  margin-top: 10%; 
 }
+
+#kellys-card{
+  padding: 2%;
+  margin-bottom: -10%;
+  margin-top: 3%;
+}
+
 #als-card{
   padding-bottom: 0
 }
@@ -134,7 +154,7 @@ body {
 }
 
 #nomv-logo{
-  padding: 5%
+  padding: 10% 2%;
 }
 #vfoundation-card{
   padding:15% 2% 0% 2%;
@@ -160,7 +180,7 @@ body {
 }
 
 #v-foundation-logo{
-  padding: 11% 3% ;
+  padding: 15% 2% ;
 }
 
 #ocra-logo{
@@ -202,7 +222,9 @@ footer{
 }
 
 #why-title{
-  padding: 3% 0% 3% 0%;
+  padding: 3% 0% 11% 0%;
+  width: 88vw;
+  height: auto;
 }
 
 .kellys-why{
@@ -211,7 +233,18 @@ footer{
 #why{
   padding-bottom: 5%;
 }
-
+#good-day-vid{
+  margin-bottom: 20%;
+}
+#news-article-title{
+  font-size: small;
+}
+#news-article-subtitle{
+  margin-bottom: 10%
+}
+#article-date{
+  font-size: xx-small;
+}
 #why-img{
   width: 100%;
   height: auto;
@@ -225,12 +258,30 @@ footer{
   height:26vh;
 }
 
+#good-day-vid{
+  width: 80vw;
+  height: 30vh;
+}
+
+#go-fund-me-btn{
+  width: 50vw;
+  height: auto;
+}
+
+#good-day-title{
+  margin: 15% 0% 10% 0%
+}
 
 
+/* ###################################################################################################### */
 /* ---------- BREAK POINT --------------------- BREAK POINT --------------------- BREAK POINT ----------- */
+/* ###################################################################################################### */
 
-
-
+@media screen and (max-width: 767px){
+  .header-img-3{
+    display: none;
+  }
+}
 
 
 
@@ -327,7 +378,10 @@ footer{
     transform: scale(1.04) !important;
     border-bottom: solid 3px rgb(112, 193, 255) !important ;
   }
-  
+  #drop-down{
+    max-height: 610px;
+    overflow: scroll;
+  }
   
   
   #title-container{
@@ -361,16 +415,14 @@ footer{
 /*####################################  Charities  Section  ################################## */
   
   #charities-container{
-    
-padding-bottom: 10%;
+    height: 490vh;
+    padding-bottom: 10%;
     overflow: scroll ;
-    height: 118.7vh;
-    margin-top: 1%;
-    margin-right: 1%;
+    margin: 1% 1% 1% 0%;
     border: solid 1px black;
-    background: linear-gradient(-45deg, rgb(190, 226, 255), rgb(0, 145, 255), rgb(3, 110, 193)), rgb(0, 120, 211);
+    background: linear-gradient(-45deg, rgb(190, 226, 255), rgb(0, 145, 255), rgb(2, 75, 130)), rgb(0, 120, 211);
     background-size: 400% 400%;
-	animation: gradient 8s ease infinite;
+	  animation: gradient 8s ease infinite;
   }
 
   @keyframes gradient {
@@ -392,7 +444,11 @@ padding-bottom: 10%;
     background: none;
     margin-bottom: 7%
   } 
-
+  #charity-container-title{
+    width: 17vw; 
+    height: auto;
+    margin-top: -5%
+  }
   .charity-card{
     display: flex;
     flex-direction: row;
@@ -478,7 +534,16 @@ padding-bottom: 10%;
   #vfoundation-card{
     padding:5% 2% 0% 2%;
   }
-  
+  #kellys-card{
+    padding: 2%;
+    margin-bottom: -10%;
+    margin-top: 3%;
+  }
+  #gofundme-img{
+    width: 25vw;
+    height: auto;
+    margin-bottom: 5%
+  }
   .card-img{
     padding: 0%;
     align-self: center;
@@ -543,7 +608,6 @@ padding-bottom: 10%;
     height: 12vh;
   }
 
-  
   /* ##################### BLOG ######################### */
 
 
@@ -605,11 +669,93 @@ padding-bottom: 10%;
     height: 51vh;
     margin: 3%;
   }
-
+  #news-article-subtitle{
+    margin-bottom: 5%
+  }
   #main-container{
     display: flex;
     flex-direction: row;
     background-color: rgb(69, 69, 69);
   }
+
+  #good-day-vid{
+    width: 45vw; 
+    height: 60vh;
+    margin-bottom: 10%;
+    border: solid 1px black;
+  }
+  #good-day-title{
+    margin-top: 8%
+  }
+
+  .share{
+    background-color: var(--background-alt);
+    width: 280px;
+    height: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-bottom: 6%;
+
+}
+.lastP{
+  margin-bottom: 10%
+}
+
+.share-cover{
+    background-color: rgb(0, 145, 255) !important;;
+    color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 2;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 80px;
+    transition: transform .5s linear;
+    font-size: 1.6em;
+}
+
+.share:hover .share-cover{
+    transform: translateX(-100%);
+    background-color:  rgb(0, 72, 131) !important;
+}
+
+.share-icon{
+    height: 80px;
+    font-size: 1.6em;
+    line-height: 80px;
+    flex: 1;
+    text-align: center;
+    color: var(--background-inverse);
+    opacity: 0;
+    transition: opacity .6s linear;
+}
+
+.share-icon:hover{
+    color: whitesmoke;
+
+}
+.share:hover .share-icon{
+    opacity: 1;
+}
+
+.facebook:hover {
+    background-color: var(--facebook);
+    
+}
+
+.instagram:hover{
+    background-color: var(--instagram);
+}
 
 }

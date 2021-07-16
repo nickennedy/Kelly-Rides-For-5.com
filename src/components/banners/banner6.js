@@ -7,7 +7,7 @@ const banner6 = () =>{
         <header id='home-header'>
             <img id="blue-jersey-img" className='header-img' src={blueJersey} alt="Happy Veterinarians Day" />
             <img id="orchard-img" className='header-img' src={orchard} alt="Not One More Vet Logo" />
-            <img id="teal-jersey-img" className='header-img' src={tealJersey} alt="Help reduce the suicide rate of Veterinarians " />
+            <img id="teal-jersey-img" className='header-img header-img-3' src={tealJersey} alt="Help reduce the suicide rate of Veterinarians " />
         </header>
     )
 }

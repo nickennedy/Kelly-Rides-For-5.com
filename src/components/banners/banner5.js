@@ -7,7 +7,7 @@ const banner5 = () =>{
         <header id='home-header'>
             <img id="header-img-1" className='header-img' src={vday} alt="Happy Veterinarians Day" />
             <img id="nomv-logo" className='header-img' src={nomvLogo} alt="Not One More Vet Logo" />
-            <img id="header-img-3" className='header-img' src={nomvPic} alt="Help reduce the suicide rate of Veterinarians " />
+            <img id="header-img-3" className='header-img header-img-3' src={nomvPic} alt="Help reduce the suicide rate of Veterinarians " />
         </header>
     )
 }

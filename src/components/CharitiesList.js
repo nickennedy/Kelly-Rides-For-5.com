@@ -5,7 +5,7 @@ import worldVetsLogo from '../images/worldVetsLogo.jpg'
 import nomvLogo from '../images/nomvLogo.png'
 import vFoundationLogo from '../images/vFoundationLogo.jpg'
 import ocraLogo from '../images/ocraLogo.png'
-
+import gofundMe from '../images/gofundme.png'
 class CharitiesList extends React.Component{
     state = { 
         charities: [
@@ -14,7 +14,7 @@ class CharitiesList extends React.Component{
                 charityName: 'NOMV',
                 missionStatement:"NOMV addresses wellbeing in veterinary medicine through multiple innovative pathways including: the world’s largest veterinary peer-to-peer support group, an educational program providing leadership focused on wellness; a support grant program providing immediate financial support; an online crisis support system specifically designed for veterinary professionals; and research to further the advancement of wellness, mental health, and the reduction of suicide in veterinary professionals.",
                 link: 'https://nomv.org/',
-                goFundMe: 'http://www.gofundme.com',
+                goFundMe: 'https://www.gofundme.com/f/kellys-ride-across-america-for-not-one-more-vet?utm_campaign=p_nacp+share-sheet&utm_medium=email&utm_source=customer',
                 imgKey: 'nomv-img',
                 key: 'nomv-card',
                 vid: ''
@@ -24,7 +24,7 @@ class CharitiesList extends React.Component{
                 charityName: 'World Vets',
                 missionStatement:"World Vets Mission is to improve the quality of life of animals, people and the environments in which they live by providing veterinary services, education, training and emergency response worldwide including work on companion animals, equids, livestock, wildlife and marine animals.",
                 link: 'https://worldvets.org/',
-                goFundMe: 'http://www.gofundme.com',
+                goFundMe: 'https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsecure.givelively.org%2Fdonate%2Fworld-vets%2Fride-for-5-fundraiser-for-world-vets&data=04%7C01%7Ckelly.okeefe%40boehringer-ingelheim.com%7Cda5a7191fe4e4fc5bbdd08d945668b23%7Ce1f8af86ee954718bd0d375b37366c83%7C1%7C0%7C637617129714103191%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&sdata=9qkrioH2jaeYHWZUj3NcXtU3tLx%2B5EI9gyeVlq0QmDU%3D&reserved=0',
                 key:'world-vets-card',
                 imgKey:'world-vets-img',
                 vid: ''
@@ -59,6 +59,16 @@ class CharitiesList extends React.Component{
                 imgKey: 'vfoundation-img',
                 vid: ''
             },
+            {
+                img: gofundMe,
+                charityName: "",
+                missionStatement:"Help Kelly go the extra mile and show your support for his ride by making a contribution to his go fund me page.",
+                link: "https://www.gofundme.com/f/kellys-ride-for-5-charity-ride-across-america?utm_campaign=p_nacp+share-sheet&utm_medium=email&utm_source=customer",
+                goFundMe: 'href="https://www.gofundme.com/f/kellys-ride-for-5-charity-ride-across-america?utm_campaign=p_nacp+share-sheet&utm_medium=email&utm_source=customer',
+                key: 'kellys-card',
+                imgKey: 'gofundme-img',
+                vid: ''
+            }
         ]
     }
     

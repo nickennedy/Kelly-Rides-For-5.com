@@ -10,33 +10,38 @@ const NavBar = () =>{
             <h2 id='title-five' className="animate__backInLeft"  >Kelly Rides For 5!</h2>
             <Nav id="nav-bar">
                 <NavItem className="nav-cause">
-                    <NavLink className="nav-link" target="_blank"  href="https://ebaumsworld.com">World Vets</NavLink>
+                    <NavLink className="nav-link" target="_blank" href="https://www.gofundme.com/f/kellys-ride-across-america-for-not-one-more-vet?utm_campaign=p_nacp+share-sheet&utm_medium=email&utm_source=customer">Not One More Vet</NavLink>
                 </NavItem>
                 <NavItem className="nav-cause">
-                    <NavLink className="nav-link animate__pulse" target="_blank" href="#">ALS Association</NavLink>
+                    <NavLink className="nav-link" target="_blank"  href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsecure.givelively.org%2Fdonate%2Fworld-vets%2Fride-for-5-fundraiser-for-world-vets&data=04%7C01%7Ckelly.okeefe%40boehringer-ingelheim.com%7Cda5a7191fe4e4fc5bbdd08d945668b23%7Ce1f8af86ee954718bd0d375b37366c83%7C1%7C0%7C637617129714103191%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&sdata=9qkrioH2jaeYHWZUj3NcXtU3tLx%2B5EI9gyeVlq0QmDU%3D&reserved=0">World Vets</NavLink>
                 </NavItem>
                 <NavItem className="nav-cause">
-                    <NavLink className="nav-link" target="_blank" href="#">The V Foundation</NavLink>
+                    <NavLink className="nav-link animate__pulse" target="_blank" href="https://www.alsa-midamerica.org/">ALS Association</NavLink>
                 </NavItem>
                 <NavItem className="nav-cause">
-                    <NavLink className="nav-link" target="_blank" href="#">Not One More Vet</NavLink>
+                    <NavLink className="nav-link" target="_blank" href="https://give.ocrahope.org/fundraiser/3330286">Ovarian Cancer Research Alliance</NavLink>
                 </NavItem>
                 <NavItem className="nav-cause">
-                    <NavLink className="nav-link" target="_blank" href="#">Ovarian Cancer Research Alliance</NavLink>
+                    <NavLink className="nav-link" target="_blank" href="https://thevictoryride.donordrive.com/index.cfm?fuseaction=donorDrive.participant&participantID=1927">The V Foundation</NavLink>
                 </NavItem>
                 <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
                 <DropdownToggle nav caret>
                     <i id='menu-icon' className="fas fa-bars"></i>
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu right id="drop-down">
                     <DropdownItem header>Causes</DropdownItem>
-                    <DropdownItem><NavLink href="https://www.v.org/" target="_blank" >The V Foundation</NavLink></DropdownItem>
-                    <DropdownItem><NavLink href="https://www.v.org/" target="_blank" >World Vets</NavLink></DropdownItem>
-                    <DropdownItem><NavLink href="https://www.v.org/" target="_blank" >Not One More Vet</NavLink></DropdownItem>
-                    <DropdownItem><NavLink href="https://www.v.org/" target="_blank" >ALS Association</NavLink></DropdownItem>
-                    <DropdownItem><NavLink href="https://www.v.org/" target="_blank" >Ovarian Cancer Research Alliance</NavLink></DropdownItem>
+                    <DropdownItem><NavLink href="https://www.gofundme.com/f/kellys-ride-across-america-for-not-one-more-vet?utm_campaign=p_nacp+share-sheet&utm_medium=email&utm_source=customer" target="_blank" >Not One More Vet</NavLink></DropdownItem>
+                    <DropdownItem><NavLink href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsecure.givelively.org%2Fdonate%2Fworld-vets%2Fride-for-5-fundraiser-for-world-vets&data=04%7C01%7Ckelly.okeefe%40boehringer-ingelheim.com%7Cda5a7191fe4e4fc5bbdd08d945668b23%7Ce1f8af86ee954718bd0d375b37366c83%7C1%7C0%7C637617129714103191%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&sdata=9qkrioH2jaeYHWZUj3NcXtU3tLx%2B5EI9gyeVlq0QmDU%3D&reserved=0" target="_blank" >World Vets</NavLink></DropdownItem>
+                    <DropdownItem><NavLink href="https://www.alsa-midamerica.org/" target="_blank" >ALS Association</NavLink></DropdownItem>
+                    <DropdownItem><NavLink href="https://give.ocrahope.org/fundraiser/3330286" target="_blank" >Ovarian Cancer Research Alliance</NavLink></DropdownItem>
+                    <DropdownItem><NavLink href="https://thevictoryride.donordrive.com/index.cfm?fuseaction=donorDrive.participant&participantID=1927" target="_blank" >The V Foundation</NavLink></DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem>Kelly's Ride For 5 Blog</DropdownItem>
+                    <DropdownItem header>Follow Kelly</DropdownItem>
+                    <DropdownItem> <NavLink href="https://www.facebook.com/KellysRidefor5" target="_blank"><i class="fab fa-facebook-f"></i></NavLink></DropdownItem>
+                    <DropdownItem> <NavLink href="https://www.instagram.com/kellyridesfor5/" target="_blank"><i class="fab fa-instagram"></i></NavLink></DropdownItem>
+                    <DropdownItem divider></DropdownItem>
+                    <DropdownItem header>Kelly's Ride For 5 Blog</DropdownItem>
+                    <DropdownItem>*** Coming Soon***</DropdownItem>
                     <DropdownItem divider />
                     <DropdownItem header>Gallery</DropdownItem>
                     <DropdownItem >Photos</DropdownItem>
