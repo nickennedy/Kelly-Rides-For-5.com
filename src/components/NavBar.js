@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+import rideFor5Logo from '../images/rideFor5Logo.png'
 
 const NavBar = () =>{
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -7,7 +8,7 @@ const NavBar = () =>{
 
     return(
         <div id="nav-container">
-            <h2 id='title-five' className="animate__backInLeft"  >Kelly Rides For 5!</h2>
+            <img id='title-five' src={rideFor5Logo} alt=" Kelly Rides For 5 Logo"/>
             <Nav id="nav-bar">
                 <NavItem className="nav-cause">
                     <NavLink className="nav-link" target="_blank" href="https://www.gofundme.com/f/kellys-ride-across-america-for-not-one-more-vet?utm_campaign=p_nacp+share-sheet&utm_medium=email&utm_source=customer">Not One More Vet</NavLink>
@@ -37,10 +38,13 @@ const NavBar = () =>{
                     <DropdownItem><NavLink href="https://thevictoryride.donordrive.com/index.cfm?fuseaction=donorDrive.participant&participantID=1927" target="_blank" >The V Foundation</NavLink></DropdownItem>
                     <DropdownItem divider />
                     <DropdownItem header>Follow Kelly</DropdownItem>
-                    <DropdownItem> <NavLink href="https://www.facebook.com/KellysRidefor5" target="_blank"><i class="fab fa-facebook-f"></i></NavLink></DropdownItem>
-                    <DropdownItem> <NavLink href="https://www.instagram.com/kellyridesfor5/" target="_blank"><i class="fab fa-instagram"></i></NavLink></DropdownItem>
+                    <DropdownItem> <NavLink href="https://www.facebook.com/KellysRidefor5" target="_blank"><i className="fab fa-facebook-f"></i></NavLink></DropdownItem>
+                    <DropdownItem> <NavLink href="https://www.instagram.com/kellyridesfor5/" target="_blank"><i className="fab fa-instagram"></i></NavLink></DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem header>Shop</DropdownItem>
+                    <DropdownItem><NavLink href="https://designlab.jakroo.com/store-front?storeId=SkXKdkeAO" target="_blank">The Kelly's Ride For Five Store!</NavLink></DropdownItem>
                     <DropdownItem divider></DropdownItem>
-                    <DropdownItem header>Kelly's Ride For 5 Blog</DropdownItem>
+                    <DropdownItem header>The Kelly's Ride For 5 Blog</DropdownItem>
                     <DropdownItem>*** Coming Soon***</DropdownItem>
                     <DropdownItem divider />
                     <DropdownItem header>Gallery</DropdownItem>

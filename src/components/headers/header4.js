@@ -1,5 +1,5 @@
 import vFoundationLogo from '../../images/vFoundationLogo.jpg'
-import jd from '../../images/jd.JPG'
+import jd from '../../images/jd.png'
 import jimmyQuote from '../../images/jimmyQuote.jpg'
 
 const banner4 = () =>{

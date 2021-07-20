@@ -6,6 +6,8 @@ import nomvLogo from '../images/nomvLogo.png'
 import vFoundationLogo from '../images/vFoundationLogo.jpg'
 import ocraLogo from '../images/ocraLogo.png'
 import gofundMe from '../images/gofundme.png'
+import storeLogo from '../images/storeLogo.png'
+import blueJersey from '../images/storeLogo.png'
 class CharitiesList extends React.Component{
     state = { 
         charities: [
@@ -67,6 +69,17 @@ class CharitiesList extends React.Component{
                 goFundMe: "https://www.gofundme.com/f/kellys-ride-for-5-charity-ride-across-america?utm_campaign=p_nacp+share-sheet&utm_medium=email&utm_source=customer",
                 key: 'kellys-card',
                 imgKey: 'gofundme-img',
+                vid: ''
+            },
+            {
+                img: storeLogo ,
+                img2: blueJersey ,
+                charityName: "",
+                missionStatement:"Check out the ",
+                link: "",
+                goFundMe: "https://designlab.jakroo.com/store-front?storeId=SkXKdkeAO",
+                key: 'store-card',
+                imgKey: 'store-logo-img',
                 vid: ''
             }
         ]

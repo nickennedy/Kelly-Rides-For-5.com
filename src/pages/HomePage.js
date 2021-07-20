@@ -5,7 +5,6 @@ import CharitiesList from '../components/CharitiesList'
 import Footer from '../components/Footer'
 import KellysWhy from '../components/KellysWhy'
 import theFive from '../images/theFive.png'
-import goFundMe from '../images/gofundme.png'
 class HomePage extends React.Component{
     render(){
         return(

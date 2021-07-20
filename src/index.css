@@ -83,9 +83,9 @@ body {
 }
 
 #title-five{
-  font-family: 'Quantico', sans-serif;
-  margin: 2.75%;
-  font-size: xx-large;
+  width: 65vw; 
+  height: auto;
+  margin: 2%
 }
 
 #menu-icon{
@@ -130,7 +130,7 @@ body {
 .charity-btn{
   margin: 5% 0% 5% 0%;
   background-color: rgb(0, 187, 255) !important;
-  color: rgb(63, 63, 63) !important;
+  color: whitesmoke !important;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
@@ -142,7 +142,7 @@ body {
 #kellys-card{
   padding: 2%;
   margin-bottom: -10%;
-  margin-top: 3%;
+  margin-top: 11%;
 }
 
 #als-card{
@@ -270,12 +270,63 @@ footer{
 
 #good-day-title{
   margin: 15% 0% 10% 0%
+  
+}
+#store-img-container{
+  background-color: rgb(50, 48, 48);
+  width: 85vw;
+  height: auto;
+  align-self: center;
+  display: flex;
+}
+.store-card-img{
+  padding: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-card-body{
+  width:42.25vw;
+  height: auto;
+  margin: 1%;
+  flex-direction: column;
+  align-items: center;
+}
+
+#store-card{
+  margin: 11% 1% 1% 1%;
+}
+.store-btn{
+  margin: 5% 0% 5% 0%;
+  background-color: rgb(0, 187, 255) !important;
+  color: whitesmoke !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  
+}
+
+.store-card-body{
+  width: 90vw;
+  display: flex;
+  justify-content: center;
 }
 
 
-/* ###################################################################################################### */
-/* ---------- BREAK POINT --------------------- BREAK POINT --------------------- BREAK POINT ----------- */
-/* ###################################################################################################### */
+
+
+
+
+
+/* ############################################################################################################################################################################################################ */
+/* ---------- BREAK POINT --------------------- BREAK POINT --------------------- BREAK POINT --------------------- BREAK POINT --------------------- BREAK POINT --------------------- BREAK POINT ----------- */
+/* ############################################################################################################################################################################################################ */
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 767px){
   .header-img-3{
@@ -285,10 +336,42 @@ footer{
     max-height: 610px;
     overflow: scroll;
   }
+
+  #fb-btn{
+    font-size: 100px;
+    display:inline;
+    margin-left: 90%;
+    color:#3b5998;
+    text-decoration: none;
+  }
+  #insta-btn{
+    font-size: 100px;
+    padding: 50%;
+    display:inline;
+    color:#517fa4;
+    text-decoration: none;
+    
+  }
   
+  .share-icon{
+    text-decoration: none;
+  }
+  
+  #keep-up{
+    display: none;
+  }
+
+  .share{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
 }
 
 
+/************** DESKTOP ***************************** DESKTOP ***************************** DESKTOP ***************************** DESKTOP ***************************** DESKTOP ***************************** DESKTOP ***************************** DESKTOP ****************/
 
 @media screen and (min-width: 768px){
 
@@ -397,10 +480,9 @@ footer{
   }
   
   #title-five{
-    font-family: 'Quantico', sans-serif;
-    margin: 2.75%;
-    font-size: xx-large;
     display: inline;
+    width: 25vw;
+    height: auto;
   }
   
   #menu-icon{
@@ -585,7 +667,12 @@ footer{
     margin-top: -4%;
     margin-bottom: -3%;
     padding: 4%;
-  } 
+  }
+
+  #jd-img{
+    width: 50vw;
+    height: auto;
+  }
 
   #nomv-img{
     width: 24vw;
@@ -762,5 +849,49 @@ footer{
 .instagram:hover{
     background-color: var(--instagram);
 }
+
+#store-img-container{
+  background-color: rgb(50, 48, 48);
+  width: 40vw;
+  height: auto;
+  align-self: center;
+  display: flex;
+}
+.store-card-img{
+  padding: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-card-body{
+  width:42.25vw;
+  height: auto;
+  margin: 1%;
+}
+
+#store-card{
+  margin-top: 11%;
+}
+.store-btn{
+  background-color: rgb(0, 145, 255) !important;
+  color: whitesmoke!important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  font-size: x-large !important;
+  width: 100%;
+  height: auto;
+  transition: all 1s ease-in-out !important;
+  align-self: center;
+}
+
+.store-btn:hover {
+  background-color:  rgb(0, 72, 131) !important;
+  transform: scale(1.1) !important;
+}
+
+
+
+
+
+
 
 }

@@ -1,13 +1,13 @@
 import React from 'react'
-import Banner1 from './banners/banner1'
-import Banner2 from './banners/banner2'
-import Banner3 from './banners/banner3'
-import Banner4 from './banners/banner4'
-import Banner5 from './banners/banner5'
-import Banner6 from './banners/banner6'
+import Header1 from './headers/header1'
+import Header2 from './headers/header2'
+import Header3 from './headers/header3'
+import Header4 from './headers/header4'
+import Header5 from './headers/header5'
+import Header6 from './headers/header6'
 class HomeHeader extends React.Component {
     state = {
-        count: 0,
+        count:3,
     }
 
     changeCount = () => {
@@ -35,32 +35,32 @@ class HomeHeader extends React.Component {
     render() {
         if(this.state.count === 0){
             return (
-                <Banner1/>
+                <Header1/>
             )
         }
         else if(this.state.count === 1){
             return (
-                <Banner2/>
+                <Header2/>
             )
         }
         else if(this.state.count === 2){
             return (
-                <Banner3/>
+                <Header3/>
             )
         }
         else if(this.state.count === 3){
             return (
-                <Banner4/>
+                <Header4/>
             )
         }
         else if(this.state.count === 4){
             return (
-                <Banner5/>
+                <Header5/>
             )
         }
         else if(this.state.count === 5){
             return (
-                <Banner6/>
+                <Header6/>
             )
         }
         
